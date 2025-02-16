@@ -106,6 +106,13 @@
   "h5": {
     "router": {
       "base": "/unibest/"
+    },
+    "sdkConfigs": {
+      "maps": {
+        "amap": {
+          "key": "ba29feb04a933a0e72b1d761b12d20bd"
+        }
+      }
     }
   }
 }
