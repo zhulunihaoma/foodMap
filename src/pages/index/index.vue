@@ -11,7 +11,7 @@
   <view>
     <view class="page-body">
       <view class="page-section page-section-gap">
-        <map style="width: 100%; height: 1500px;" :latitude="mapData.latitude" :longitude="mapData.longitude" :markers="mapData.covers">
+        <map style="width: 100%; height: 100vh;" :latitude="mapData.latitude" :longitude="mapData.longitude" :markers="mapData.covers">
         </map>
       </view>
     </view>
@@ -30,20 +30,20 @@ defineOptions({
 const { safeAreaInsets } = uni.getSystemInfoSync()
 const mapData = reactive(
   {
-    id: 0, // 使用 marker点击事件 需要填写id
+    id: 0, // 使用 marker点  击事件 需要填写id
     title: 'map',
-    latitude: 39.909,
-    longitude: 116.39742,
+    latitude: 32.058300,
+    longitude: 118.796000,
     covers: [{
       id:1,
-      latitude: 39.909,
-      longitude: 116.39742,
-      iconPath: '../../../static/location.png'
+      latitude: 32.058300,
+      longitude: 118.796000,
+      iconPath: '../../../../../static/images/dys.jpg'
     }, {
       id:2,
-      latitude: 39.90,
-      longitude: 116.39,
-      iconPath: '../../../static/location.png'
+      latitude: 31.058300,
+       longitude: 118.796000,
+      iconPath: '@static/images/wll.jpg'
     }]
   }
 )
